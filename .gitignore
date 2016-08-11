@@ -1,7 +1,8 @@
 # Created by .ignore support plugin (hsz.mobi)
 
 tpl/js/slick
-.idea
+.idea/*
 tpl/fonts
 tpl/img
 tpl/svg
+.gitignore
