@@ -1,0 +1,12 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+tpl/js/slick
+.idea/copyright/
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/public_html.iml
+.idea/workspace.xml
+tpl/fonts
+tpl/img
+tpl/svg
