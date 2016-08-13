@@ -12,7 +12,7 @@ a:active, a:hover {
 #Breadcrumbs {
     display: inline-block;
     float: left;
-    width: 450px;
+    width: 400px;
     max-width: 100%;
     overflow: hidden;
     padding: 0 15px;
@@ -47,7 +47,7 @@ ul.B_crumbBox {
     height: 44px;
     position: relative;
     margin-bottom: 0;
-    margin-top: 2px;
+    margin-top: 3px;
     width: 290px;
 }
 .sisea-search-form button {
@@ -77,25 +77,109 @@ ul.B_crumbBox {
 }
 .onmain {
     float: right;
-    margin-top: 10px;
-    margin-left: 60px;
+    margin-top: 0;
+    margin-left: 50px;
 }
 .onmain a {
     font-size: 16px;
     font-weight: 300;
     color: #fff;
 }
-.onmain span {
-    position: relative;
-    margin-top: 5px;
-    display: inline-block;
-    float: left;
-    margin-right: 7px;
+.onmain .language {
+    margin-right: 30px;
+    line-height: 40px;
 }
-.onmain i:before {
-    content: "→";
-    font-size: 27px;
-    line-height: 0.5em;
+.onmain .language a {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.onmain .language a:hover {
+    text-decoration: none;
+    outline:none;
+    color: #ffd54d;
+}
+.onmain .phone a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+    font-size: 20px;
+    text-align: center;
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.onmain .phone {
+    margin-right: 30px;
+    margin-top: 3px;
+}
+.toggle {
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    z-index: 102;
+    position: relative;
+    float: right;
+    margin-top: 10px;
+}
+.toggle > div {
+    height: 28px;
+    width: 35px;
+    cursor: pointer;
+}
+.toggle > div > div {
+    width: 100%;
+    height: 2px;
+    margin: 0 0 .43em 0;
+    background-color: #fff;
+    transition-duration: .3s;
+    transition-delay: 0s, 0s, 0s, 0s;
+}
+.toggle > div > div:nth-child(3) {
+    width: 100%;
+    float: right;
+    margin-bottom: 0;
+}
+.toggle:hover > div > div:nth-child(3) {
+    width: 100%;
+}
+
+.toggle.open > div > div:nth-child(1) {
+    -webkit-transform: translateY(12px) rotate(45deg);
+    -ms-transform: translateY(12px) rotate(45deg);
+    transform: translateY(12px) rotate(45deg);
+}
+
+.toggle.open > div > div:nth-child(2) {
+    opacity: 0;
+}
+
+.toggle.open > div > div:nth-child(3) {
+    width: 100%;
+    -webkit-transform: translateY(-12px) rotate(-45deg);
+    -ms-transform: translateY(-12px) rotate(-45deg);
+    transform: translateY(-12px) rotate(-45deg);
+}
+
+.toggle.dark > div > div {
+    background-color: #15181C;
+}
+
+.toggle.ligth > div > div {
+    background-color: #ffffff;
+}
+
+
+
+.onmain .phone a:hover {
+    background: rgba(255,255,255,0.3);
 }
 .full-content {
     width: 1140px;
@@ -172,6 +256,7 @@ ul.B_crumbBox {
 }
 body {
     background: #fff;
+    min-width: 1170px;
 }
 .pagination {
     display: none;
@@ -316,7 +401,7 @@ body {
     top: 12px;
 }
 #result {
-    padding: 30px;
+    padding: 30px 0;
 }
 
 
@@ -342,7 +427,7 @@ body {
 .open-search {
     color: #fff;
     position: absolute;
-    right: 20px;
+    right: 70px;
     top: 0;
     line-height: 50px;
     z-index: 2;
@@ -532,96 +617,18 @@ body {
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
-@media (max-width: 960px) {
-    #blog_section .row .blog-item {
-        margin-bottom: 0;
-    }
-    .top-red .top-menu .logo {
-        overflow: hidden;
-        margin: 10px 15px;
-    }
-    .nomobile {
-        display: none;
-    }
-    .full-content {
-        width: 100%;
-    }
-    .container {
-        margin-top: 20px;
-        width: 100%;
-    }
-    .category {
-        padding: 0 0 20px;
-    }
-    #overlay.open {
-        position: fixed;
-        width: 100%;
-        height:100%;
-        left: 0;
-        top: 0;
-        background: rgba(0,0,0,0.3);
-        z-index: 111;
-    }
-    div.search {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #ffd54d;
-        padding: 4px 20px;
-        display: none;
-        width: 100%;
-        z-index: 1;
-    }
-    div.search.mobile-only {
-        padding: 10px 20px;
-    }
-    div.search.open {
-        display: block;
-        z-index: 222;
-    }
-    .sisea-search-form {
-        margin-bottom: 0;
-    }
-    html, body {
-        overflow-x: hidden;
-        max-width: 100%;
-    }
-    .full-content .col-9 {
-        padding: 0 20px;
-        width: 100%;
-    }
-    .full-content .sidebar {
-        padding: 0 20px;
-        width: 100%;
-    }
-    .full-content .col-9 .content {
-        padding-right: 0;
-    }
-    .full-content .col-9 .content h1 {
-        font-size: 29px;
-        margin-bottom: 30px;
-    }
-    .full-content .col-9 .content h2 {
-        font-size:20px;
-    }
-    .full-content .col-9 .content h3 {
-        font-size: 18px;
-    }
-    .B_crumbBox li a {
-        font-size:17px;
-    }
-    .sidebar .category ul,
-    .article .head h2,
-    .article .item .h3{
-        padding-left: 0;
-    }
-    #footer_section .row .col-3 .dinline .item {
-        padding-right: 10px;
-    }
-    section .overflow-helper {
-        padding: 10px 0;
-    }
-    #footer_section .row .col-3 .dinline {
-        margin-top: 0;
-    }
+select#tab_select {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    height: 40px;
+    padding: 0 30px 0 20px;
+    font-size: 19px;
+    font-weight: 300;
+}
+.mobile-only {
+    display: none;
 }

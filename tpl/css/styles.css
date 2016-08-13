@@ -11,15 +11,16 @@ select {
 .posrel {
   position: relative;
   overflow: hidden;
+  padding: 0 30px;
 }
 .posrel span.sel-arrow:after {
   content: '';
   width: 10px;
   height: 1px;
-  background: #e3523e;
+  background: #adadad;
   display: block;
   position: absolute;
-  right: 33px;
+  right: 52px;
   top: 50%;
   -moz-transform: rotate(-40deg);  /* FF3.5/3.6 */
   -o-transform: rotate(-40deg);  /* Opera 10.5 */
@@ -30,10 +31,10 @@ select {
   content: '';
   width: 10px;
   height: 1px;
-  background: #e3523e;
+  background: #adadad;
   display: block;
   position: absolute;
-  right: 40px;
+  right: 60px;
   top: 50%;
   -moz-transform: rotate(40deg);  /* FF3.5/3.6 */
   -o-transform: rotate(40deg);  /* Opera 10.5 */
@@ -1001,10 +1002,6 @@ body {
 }
 .text-blue {
   color: #009cff;
-}
-section {
-  text-align: center;
-  background: #f5f5f5;
 }
 section .background {
   position: absolute;

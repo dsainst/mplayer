@@ -4,7 +4,7 @@
     <base href="http://player.loc/"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MarketMusic</title>
+    <title>MarketPlayer</title>
 
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700,700italic,900,900italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -16,24 +16,15 @@
 
 </head>
 <body>
-<div class="toggle" id="navToggle">
-    <div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-</div>
-<div class="menu">
-    <div class="container">
-        <div class="logo pull-left"><img src="tpl/img/logo.png" width="209" height="50"></div>
-        <div>
-            <ul class="sections"><li class="first"><a href="#intro" >О компании</a></li><li><a href="#about" >Мы на карте</a></li><li><a href="#trust" >Нам доверяют</a></li><li><a href="#sample" >Примеры музыки</a></li><li><a href="#service" >Наши преимущества</a></li><li><a href="#contact" >Заказать звонок</a></li><li class="last"><a href="#blog" >Блог</a></li></ul>
-            <ul class="languages">
-                <li><a href="#" class="selected">RU</a></li>
-                <!--<li><a href="en" class="">ENG</a></li>-->
-            </ul>
-        </div>
-    </div>
+<div class="search mobile-only">
+    <form class="sisea-search-form" action="info/rezultatyi-poiska.html" method="get">
+
+        <input type="search" name="search" placeholder="Поиск" id="search" value="">
+        <input type="hidden" name="id" value="25">
+
+        <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+
 </div>
 <div class="top-red">
     <div class="top-menu container">
@@ -45,6 +36,9 @@
             </div>
         </div>
         <div class="pull-right">
+            <div class="mobile-only open-search">
+                <i class="fa fa-search"></i>
+            </div>
             <div class="search pull-left">
 
                 <form class="sisea-search-form" action="info/rezultatyi-poiska.html" method="get">
@@ -56,10 +50,31 @@
             </div>
 
             <div class="onmain">
-                <a href="/">
-                    <span>На главную</span>
-                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                </a>
+
+                    <div class="language pull-left nomobile"><a href="http://market-music.us/">En</a></div>
+                    <div class="phone pull-left nomobile"><a href="#modal_contact"><i class="fa fa-phone"></i></a></div>
+
+                <div class="toggle" id="navToggle">
+                    <div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+
+                <div class="menu">
+                    <div class="container">
+                        <div class="logo pull-left"><img src="tpl/img/logo.png" width="209" height="50"></div>
+                        <div class="clearfix"></div>
+                        <div>
+                            <ul class="sections"><li class="first"><a href="#intro" >О компании</a></li><li><a href="#about" >Мы на карте</a></li><li><a href="#trust" >Нам доверяют</a></li><li><a href="#sample" >Примеры музыки</a></li><li><a href="#service" >Наши преимущества</a></li><li><a href="#contact" >Заказать звонок</a></li><li class="last"><a href="#blog" >Блог</a></li></ul>
+                            <ul class="languages">
+                                <li><a href="#" class="selected">RU</a></li>
+                                <!--<li><a href="en" class="">ENG</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -69,7 +84,7 @@
 
 <div class="category">
     <div class="container">
-        <ul>
+        <ul class="nomobile">
             <li class="item-cat active">
                 <a href="blog/muzyika.html">Все</a>
             </li>
@@ -95,6 +110,10 @@
                 <a href="blog/muzyika.html">Формат музыки</a>
             </li>
         </ul>
+        <div class="only-mobile posrel">
+            <span class="sel-arrow"></span>
+            <select name="tab_select" id="tab_select" class="mobile-only"><option value="/blog/">Все</option><option value="/blog/kejsyi-i-faktyi/">Кейсы и факты</option><option value="/blog/smi-o-nas/">СМИ о нас</option><option value="/blog/muzyika/">Музыка</option><option value="/blog/video/">Видео</option><option value="/blog/publikacii-po-teme-tehnologii/">Технология</option><option value="/blog/publikacii-po-teme-yuridicheskaya-podderzhka/">Юридическая поддержка</option><option value="/blog/vidy-biznesov/">Виды бизнесов</option><option value="/blog/nashi-klienty/">Наши клиенты</option></select>
+        </div>
     </div>
 </div>
 
@@ -105,7 +124,7 @@
             <div class="col-3">
                 <div class="blog-item">
                     <div class="img-block">
-                        <a href="blog/smi-o-nas/news3.html"><img src="/assets/images/blog3.png" alt=""></a>
+                        <a href="blog/smi-o-nas/news3.html"><img src="tpl/img/blog.png" alt=""></a>
                     </div>
                     <div class="tags">
                         <p>СМИ о нас</p>
@@ -120,7 +139,7 @@
             <div class="col-3">
                 <div class="blog-item">
                     <div class="img-block">
-                        <a href="blog/kejsyi-i-faktyi/news1.html"><img src="/assets/images/./blog.png" alt=""></a>
+                        <a href="blog/kejsyi-i-faktyi/news1.html"><img src="tpl/img/blog.png" alt=""></a>
                     </div>
                     <div class="tags">
                         <p>Кейсы и факты</p>
@@ -136,7 +155,7 @@
             <div class="col-3">
                 <div class="blog-item">
                     <div class="img-block">
-                        <a href="blog/smi-o-nas/news2.html"><img src="/assets/images/blog2.png" alt=""></a>
+                        <a href="blog/smi-o-nas/news2.html"><img src="tpl/img/blog.png" alt=""></a>
                     </div>
                     <div class="tags">
                         <p>СМИ о нас</p>
@@ -200,6 +219,7 @@
 <script src="tpl/js/jquery-2.1.4.min.js"></script>
 <script src="tpl/js/jquery-ui.js"></script>
 <script src="https://npmcdn.com/packery@2.1/dist/packery.pkgd.min.js"></script>
+<script src="tpl/js/main.js"></script>
 <script>
     $('document').ready(function(){
         $('#nest').packery({
@@ -207,18 +227,5 @@
         });
     })
 </script>
-<script type="text/javascript" src="/assets/components/pdotools/js/pdopage.js"></script>
-<script type="text/javascript">pdoPage.initialize({
-    wrapper: "#result",
-    rows: "#result .rows",
-    pagination: "#result .pagination",
-    link: "#result .pagination a",
-    more: "#result .btn-more",
-    moreTpl: "<button class=\"btn btn-default btn-more\">Загрузить еще</button>",
-    mode: "button",
-    pageVarKey: "page",
-    pageLimit: 5,
-    assetsUrl: "/assets/components/pdotools/"
-});</script>
 </body>
 </html>
