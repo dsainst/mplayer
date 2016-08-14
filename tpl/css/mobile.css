@@ -40,6 +40,7 @@ body, html {
     }
     .container {
         margin-top: 20px;
+        padding: 0 30px;
         width: 100%;
     }
     #blog_section, .standart {
@@ -137,5 +138,41 @@ body, html {
     }
     #result {
         padding: 30px 30px;
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 420px) { /* верстка для мобильных телефонов */
+    .slider-main .text {
+        font-size: 30px;
+    }
+
+    .row-main.w945,
+    .row-main.w945 .col-md-9,
+    .row-main.w945 .col-md-3,
+    .row-main .col-md-6,
+    .row-main .col-md-3 {
+        width: 100%;
+    }
+    .title-block .h2 {
+        margin-left: 0;
+        font-size: 36px;
+    }
+    .module.border-block .desc,
+    .module .desc {
+        font-size: 15px;
+    }
+    .module.yellow-block .header {
+        font-size: 18px;
+    }
+    .module .header h3 {
+        margin-bottom: 30px;
+        font-size: 22px;
+    }
+    .mt60, .mt100 {
+        margin-top: 0;
     }
 }
