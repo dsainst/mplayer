@@ -20,7 +20,7 @@ select {
   background: #adadad;
   display: block;
   position: absolute;
-  right: 52px;
+  right: 15px;
   top: 50%;
   -moz-transform: rotate(-40deg);  /* FF3.5/3.6 */
   -o-transform: rotate(-40deg);  /* Opera 10.5 */
@@ -34,7 +34,7 @@ select {
   background: #adadad;
   display: block;
   position: absolute;
-  right: 60px;
+  right: 22px;
   top: 50%;
   -moz-transform: rotate(40deg);  /* FF3.5/3.6 */
   -o-transform: rotate(40deg);  /* Opera 10.5 */

@@ -5,10 +5,6 @@ a {
 a:active, a:hover {
     text-decoration: underline;
 }
-.top-red .top-menu .logo {
-    margin-left: 0;
-    margin-top: 0;
-}
 #Breadcrumbs {
     display: inline-block;
     float: left;
@@ -18,6 +14,7 @@ a:active, a:hover {
     padding: 0 15px;
     white-space: nowrap;
 }
+
 ul.B_crumbBox {
     list-style: none;
     padding-left: 0;
@@ -53,8 +50,9 @@ ul.B_crumbBox {
 .sisea-search-form button {
     position: absolute;
     right: 15px;
+    height: 30px;
     top: 0;
-    line-height: 40px;
+    line-height: 44px;
     background: transparent;
     border: 0;
     color: #fff;
@@ -74,6 +72,7 @@ ul.B_crumbBox {
     outline: none;
     padding: 0 30px;
     box-sizing: border-box;
+    line-height: 41px;
 }
 .onmain {
     float: right;
@@ -103,18 +102,9 @@ ul.B_crumbBox {
     color: #fff;
     text-decoration: none;
     display: block;
-    border: 2px solid #fff;
-    border-radius: 50%;
     height: 40px;
     width: 40px;
     line-height: 38px;
-    font-size: 20px;
-    text-align: center;
-    -moz-transform: rotate(270deg);
-    -ms-transform: rotate(270deg);
-    -webkit-transform: rotate(270deg);
-    -o-transform: rotate(270deg);
-    transform: rotate(270deg);
 }
 .onmain .phone {
     margin-right: 30px;
@@ -178,14 +168,13 @@ ul.B_crumbBox {
 
 
 
-.onmain .phone a:hover {
-    background: rgba(255,255,255,0.3);
+.onmain .phone a:hover .st0 {
+    fill: #F4D458;
 }
 .full-content {
     width: 1140px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
 }
 .category {
     background: #f5f5f5;
@@ -227,14 +216,13 @@ ul.B_crumbBox {
 #blog_section,
 .standart {
     margin: 50px 0;
-    overflow: hidden;
 }
-.btn-more {
+#result .btn-more {
     width: 250px;
     margin: 30px auto;
     clear: both;
 }
-.btn-more a {
+#result .btn-more a {
     text-decoration: none;
     font-weight: 500;
     line-height: 60px;
@@ -256,7 +244,6 @@ ul.B_crumbBox {
 }
 body {
     background: #fff;
-    min-width: 1170px;
 }
 .pagination {
     display: none;
@@ -431,6 +418,7 @@ body {
     top: 0;
     line-height: 50px;
     z-index: 2;
+    width: 30px;
 }
 
 #blog_section .overflow-helper {
@@ -552,6 +540,9 @@ body {
 }
 #footer_section .row .col-3 .dinline .item {
     padding-right: 20px;
+    width: 45%;
+    display: inline-block;
+    vertical-align: middle;
 }
 #footer_section .row .col-3 .nav-footer-menu ul {
     list-style: none;
@@ -607,7 +598,9 @@ body {
     display: none;
     height: 100%;
     width: 100%;
-    background: #ffd54d;
+    background: #ddd;
+    background: url(../img/bg.png) 50% 50% no-repeat;
+    background-size: cover;
     z-index: 101;
     position: fixed;
     bottom: 0;
@@ -616,6 +609,20 @@ body {
     right: 0;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
+}
+.menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+.menu ul li {
+    margin-bottom: 14px;
+}
+.menu ul li a {
+    font-size: 20px;
+}
+.menu ul li a:hover {
+    text-decoration: none;
+    color: #ffd54d;
 }
 select#tab_select {
     width: 100%;

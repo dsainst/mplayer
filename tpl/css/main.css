@@ -7,6 +7,9 @@ header#main .bkg {
     top: 0;
     left: 0;
 }
+.menu .logo {
+    margin-top: 30px;
+}
 .main {
     padding: 30px 0;
     overflow: hidden;
@@ -135,13 +138,14 @@ header#main .bkg {
     margin-top: 30px;
 }
 .testim .item .num {
-    height: 90px;
+    height: 77px;
     overflow: hidden;
 }
 .testim .item .num span {
     font-size:120px;
     font-weight: 300;
     color: #ffd54d;
+    line-height: 1em;
 }
 .testim .item .head h3 {
     margin: 0;
@@ -216,6 +220,8 @@ button.send:focus {
 
 .form-test input:focus,
 .form-test textarea:focus,
+.form-test input.error,
+.form-test textarea.error,
 .form-test input:active,
 .form-test textarea:active {
     border-color: #ffd54d;
@@ -312,10 +318,10 @@ button.send:focus {
     text-align: center;
     text-decoration: none;
     line-height: 26px;
-    background: url(../img/close.png) no-repeat;
+    background: url(../svg/close.svg) no-repeat;
     cursor: pointer;
     position: absolute;
-    right: -10px;
+    right: 20px;
     top: 30px;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -323,7 +329,132 @@ button.send:focus {
     -o-transition: all 0.5s;
     transition: all 0.5s;
 }
+.close:hover {
+    background: url(../svg/close2.svg) no-repeat;
+}
+.dm-modal .video {
+    text-align: center;
+}
+#modal_thank,
+#modal_contact {
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, arial;
+}
+#modal_thank h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+#modal_thank .descr {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 90px;
+}
+#modal_contact h2 {
+    font-size: 50px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+#modal_contact .descr {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    font-weight: 300;
+    margin-bottom: 90px;
+}
+#modal_contact #tabs ul {
+    padding-left: 0;
+    list-style: none;
+    display: block;
+    border-bottom: 2px solid #d6d6d6;
+    padding-bottom: 20px;
+    height: 50px;
+}
+#modal_contact #tabs ul li {
+    display: inline-block;
+    float: left;
+    width: 156px;
+    outline: none;
+    text-align: center;
+    position: relative;
+    height: 29px;
+}
+#modal_contact #tabs ul li.ui-tabs-active:after,
+#modal_contact #tabs ul li:hover:after {
+    content: '';
+    border-bottom: 2px solid #ffd54d;
+    position: absolute;
+    width: 100%;
+    bottom: -21px;
+    left: 0;
+}
+#modal_contact #tabs ul li a {
+    font-size: 20px;
+    color: #333;
+    outline: none;
+    font-weight: 300;
+    display: block;
+    text-decoration: none;
+}
+#modal_contact #tabs ul li.ui-tabs-active a {
+    font-size: 24px;
+    color: #000;
+    font-weight: 400;
+}
+#modal_contact #tabs .phone,
+#modal_contact #tabs .email {
+    float: left;
+    font-size: 30px;
+    font-weight: 400;
+    padding: 50px 80px;
+    min-width: 50%;
+}
+#modal_contact #tabs .phone a,
+#modal_contact #tabs .email a {
+    text-decoration: none;
+    color: #333;
+    outline: none;
+}
+#modal_contact #tabs .phone p,
+#modal_contact #tabs .email p {
+    color: #333333;
+    margin-bottom: 70px;
+}
+#modal_contact #tabs .phone h3,
+#modal_contact #tabs .email h3 {
+    font-size: 18px;
+    color: #c8c8c8;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+#modal_contact #tabs .ui-widget-content {
+    height: 314px;
+    overflow: hidden;
+}
 
+.owl-item a {
+    display: inline-block;
+    width: 200px;
+    height: 120px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px;
+}
+#slick {
+    margin-top: 30px;
+}
+
+.only-mobile {
+    display: none;
+}
+#fundamental .img-block img {
+    margin: 0 auto;
+}
 
 
 ::-webkit-input-placeholder {color:rgba(57,61,76,0.8);font-size: 17px;}

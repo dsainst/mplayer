@@ -1,4 +1,4 @@
-header.modules.module-1 .bkg {
+header.modules.module-47 .bkg {
     background: url(../img/module1/3-layers.png) 50% 50% no-repeat;
     background-size: cover;
     width: 100%;
@@ -7,7 +7,7 @@ header.modules.module-1 .bkg {
     top: 0;
     left: 0;
 }
-header.modules.module-2 .bkg {
+header.modules.module-62 .bkg {
     background: url(../img/module2/3-layers.jpg) 50% 50% no-repeat;
     background-size: cover;
     width: 100%;
@@ -16,7 +16,7 @@ header.modules.module-2 .bkg {
     top: 0;
     left: 0;
 }
-header.modules.module-3 .bkg {
+header.modules.module-63 .bkg {
     background: url(../img/module3/3-layers.jpg) 50% 50% no-repeat;
     background-size: cover;
     width: 100%;
@@ -25,8 +25,8 @@ header.modules.module-3 .bkg {
     top: 0;
     left: 0;
 }
-header.modules.module-4 .bkg {
-    background: url(../img/module3/3-layers.jpg) 50% 50% no-repeat;
+header.modules.module-64 .bkg {
+    background: url(../img/module4/3-layers.jpg) 50% 50% no-repeat;
     background-size: cover;
     width: 100%;
     height: 700px;
@@ -88,6 +88,7 @@ header.modules.module-4 .bkg {
 }
 .special-block .img-block {
     max-width: 100%;
+    text-align: center;
     margin: 0;
 }
 .module.border-block {
@@ -155,10 +156,10 @@ header.modules.module-4 .bkg {
 }
 .item-last .img-block {
     width: 100%;
-    height: 158px;
+    height: 150px;
     border: 1px solid #393d4c;
     display: inline-block;
-    line-height: 158px;
+    line-height: 150px;
     cursor: pointer;
     text-align: center;
 }
