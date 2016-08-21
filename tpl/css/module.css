@@ -148,11 +148,17 @@ header.modules.module-64 .bkg {
     padding: 0 15px;
 }
 .news-items .item .head .h3{
-    color: #393d4c;
     font-size: 16px;
     font-weight: 300;
     margin: 20px 10px;
     line-height: 20px;
+}
+.news-items .item .head .h3 a {
+    color: #393d4c;
+    text-decoration: none;
+}
+.news-items .item .head .h3 a:hover {
+    color: #ffd54d;
 }
 .item-last .img-block {
     width: 100%;
@@ -173,6 +179,7 @@ header.modules.module-64 .bkg {
     color: #393d4c;
     font-size: 20px;
     font-weight: 300;
+    white-space: nowrap;
     line-height: 20px;
 }
 .item-last .img-block:hover span {

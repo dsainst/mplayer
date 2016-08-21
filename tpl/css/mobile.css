@@ -39,6 +39,15 @@ body, html {
     #Breadcrumbs {
         width: 400px;
     }
+    #navigate .right-nav img {
+        display: none;
+    }
+    #navigate .right-nav svg {
+        margin-right: 15px;
+    }
+    #navigate .left-nav svg {
+        margin-left: 15px;
+    }
     .open-search {
         margin-top: 5px;
     }
@@ -207,7 +216,9 @@ body, html {
         padding: 20px 0;
     }
 
-
+    #modal_contact #tabs .ui-widget-content {
+        height: auto;
+    }
 
     .nomobile {
         display: none !important;
@@ -219,6 +230,14 @@ body, html {
     #modal_contact #tabs .phone, #modal_contact #tabs .email {
         font-size: 25px;
         padding: 0 20px;
+        width: 50%;
+    }
+    #modal_contact #tabs .phone p, #modal_contact #tabs .email p {
+        margin-bottom: 30px;
+    }
+    .www {
+        padding: 0 20px;
+        margin-left: 0;
     }
     #testit {
         background: none !important;
@@ -242,7 +261,7 @@ body, html {
     .video embed, .video object, .video iframe {
         width: 100%;
         height: auto;
-        min-height: 250px;
+        min-height: 50vw;
     }
     .row-main.w945 {
         width: 100%;
@@ -268,11 +287,47 @@ body, html {
         float: right;
         margin-top: 0;
     }
+    #test-module {
+        padding: 50px 0;
+    }
+    .title-block .h2 {
+        margin-left: 50px;
+        font-size: 44px;
+    }
+    .title-block {
+        margin-bottom: 45px;
+    }
+    .row-main .col-md-3 {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    #articles {
+        padding-bottom: 50px;
+    }
 }
 
 @media screen and (max-width: 600px) { /* верстка для мобильных телефонов */
     .slider-main .text {
         font-size: 30px;
+    }
+    #navigate .right-nav a,
+    #navigate .left-nav a {
+        line-height: 30px;
+    }
+    .neighbors .pull-right,
+    .neighbors .pull-left {
+        float: none;
+    }
+    #navigate .right-nav {
+        padding: 0;
+    }
+    #navigate .left-nav {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+    #modal_contact #tabs .phone, #modal_contact #tabs .email, .www {
+        width: 100%;
+        font-size: 21px;
     }
     #blog_section .row .col-3 {
         width: 100%;
