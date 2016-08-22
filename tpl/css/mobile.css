@@ -427,6 +427,13 @@ body, html {
     .open-search {
         line-height: 40px;
     }
+    .toggle {
+        margin-top: 4px;
+    }
+    .logo img {
+        width: auto;
+        height: 35px;
+    }
 }
 
 @media screen and (max-width: 340px) {
