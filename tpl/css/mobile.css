@@ -310,6 +310,9 @@ body, html {
     .slider-main .text {
         font-size: 30px;
     }
+    .form-test textarea {
+        height: 150px;
+    }
     #navigate .right-nav a,
     #navigate .left-nav a {
         line-height: 30px;
@@ -358,10 +361,6 @@ body, html {
     }
 
     body#catalog .toggle {
-        margin-top: 10px;
-    }
-
-    body#module .toggle {
         margin-top: 10px;
     }
 
@@ -433,6 +432,9 @@ body, html {
     .logo img {
         width: auto;
         height: 35px;
+    }
+    #footer_section .row .col-3 .nav-footer-menu ul li a {
+        font-size: 13px;
     }
 }
 

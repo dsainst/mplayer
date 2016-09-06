@@ -40,6 +40,10 @@ ul.B_crumbBox {
     margin-right: 25px;
     display: inline-block;
 }
+.img-left img {
+    max-width: 100%;
+    height: auto;
+}
 .sisea-search-form {
     height: 44px;
     position: relative;
@@ -613,6 +617,7 @@ body {
 .menu ul {
     list-style: none;
     padding-left: 0;
+    margin: 50px 0;
 }
 .menu ul li {
     margin-bottom: 14px;

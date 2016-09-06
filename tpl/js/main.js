@@ -31,6 +31,12 @@ $(function() {
             $('html').css('overflow','auto');
         }))
     });
+
+
+    $("#top-menu a.item").click(function(){
+        $("#navToggle").click();
+        $('html').css('overflow','auto');
+    })
     if( !isMobile.any() ) {}
 
 
